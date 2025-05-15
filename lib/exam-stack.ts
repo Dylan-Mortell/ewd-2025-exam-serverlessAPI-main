@@ -52,8 +52,8 @@ export class ExamStack extends cdk.Stack {
       }),
     });
 
-    const api = new apig.RestApi(this, "ExamAPI", {
-      description: "Exam api",
+    const api = new apig.RestApi(this, "movieAPI", {
+      description: "movie api",
       deployOptions: {
         stageName: "dev",
       },
